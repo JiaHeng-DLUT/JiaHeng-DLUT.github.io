@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jiaheng-dlut.github.io/</id>
     <title>Gridea</title>
-    <updated>2021-04-30T17:39:51.883Z</updated>
+    <updated>2021-05-01T15:46:37.843Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jiaheng-dlut.github.io/"/>
     <link rel="self" href="https://jiaheng-dlut.github.io/atom.xml"/>
@@ -45,23 +45,23 @@ print(loss)
 </code></pre>
 <h1 id="target">Target</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2316030"><label class="task-list-item-label" for="task-item-2316030"> Spanish</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6849430"><label class="task-list-item-label" for="task-item-6849430"> weight -> 75 kg</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2371485"><label class="task-list-item-label" for="task-item-2371485"> 11, 6, 6</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7580947"><label class="task-list-item-label" for="task-item-7580947"> no pepper</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7492713"><label class="task-list-item-label" for="task-item-7492713"> https://tangshusen.me/Dive-into-DL-PyTorch/#/chapter06_RNN/6.1_lang-model</label>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9293898"><label class="task-list-item-label" for="task-item-9293898"> Spanish</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9450995"><label class="task-list-item-label" for="task-item-9450995"> weight -> 75 kg</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1365330"><label class="task-list-item-label" for="task-item-1365330"> 11, 6, 6</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1807707"><label class="task-list-item-label" for="task-item-1807707"> no pepper</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7877771"><label class="task-list-item-label" for="task-item-7877771"> https://tangshusen.me/Dive-into-DL-PyTorch/#/chapter06_RNN/6.1_lang-model</label>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6718034"><label class="task-list-item-label" for="task-item-6718034"> 什么是马尔可夫假设？</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2718791"><label class="task-list-item-label" for="task-item-2718791"> 什么是马尔可夫假设？</label></li>
 </ul>
 </li>
 </ul>
 <h1 id="2021-04-12-2021-04-18">2021-04-12 -&gt; 2021-04-18</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2951319"><label class="task-list-item-label" for="task-item-2951319"> Lose 0.5kg</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3927670"><label class="task-list-item-label" for="task-item-3927670"> VAE (what, why, how), Monday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7187474"><label class="task-list-item-label" for="task-item-7187474"> Markov Chain (what, why, how), Tuesday -> Friday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-11458"><label class="task-list-item-label" for="task-item-11458"> Call mom, Tuesday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1733285"><label class="task-list-item-label" for="task-item-1733285"> Call dad, Thursday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8625960"><label class="task-list-item-label" for="task-item-8625960"> Lose 0.5kg</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9706292"><label class="task-list-item-label" for="task-item-9706292"> VAE (what, why, how), Monday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7097442"><label class="task-list-item-label" for="task-item-7097442"> Markov Chain (what, why, how), Tuesday -> Friday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2494190"><label class="task-list-item-label" for="task-item-2494190"> Call mom, Tuesday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6959332"><label class="task-list-item-label" for="task-item-6959332"> Call dad, Thursday</label></li>
 </ul>
 <table>
 <thead>
@@ -120,11 +120,11 @@ print(loss)
 <h1 id="academic">Academic</h1>
 <h2 id="coding">Coding</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7165436"><label class="task-list-item-label" for="task-item-7165436"> 拿到需求 -> 可行性分析、lower bound、upper bound</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-175655"><label class="task-list-item-label" for="task-item-175655"> 设计 -> visualization</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3180206"><label class="task-list-item-label" for="task-item-3180206"> how to test -> a reliable result</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-369373"><label class="task-list-item-label" for="task-item-369373"> code</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7232317"><label class="task-list-item-label" for="task-item-7232317"> test</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3739708"><label class="task-list-item-label" for="task-item-3739708"> 拿到需求 -> 可行性分析、lower bound、upper bound</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9966876"><label class="task-list-item-label" for="task-item-9966876"> 设计 -> visualization</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6028185"><label class="task-list-item-label" for="task-item-6028185"> how to test -> a reliable result</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-170737"><label class="task-list-item-label" for="task-item-170737"> code</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4194203"><label class="task-list-item-label" for="task-item-4194203"> test</label></li>
 </ul>
 <h2 id="git">git</h2>
 <p>放弃工作区修改，<strong>一定不能忘记--，否则就是切换 branch 了</strong>。</p>
@@ -132,7 +132,7 @@ print(loss)
 </code></pre>
 <h1 id="bookmarks">Bookmarks</h1>
 <ul>
-<li><a href="https://www.meiju11.com/Play/358-1-13.html">爱美剧</a></li>
+<li><a href="https://www.meiju11.com/Play/358-1-16.html">爱美剧</a></li>
 <li><a href="http://www.meijuxia.vip/play/282-13-12.html">美剧侠</a></li>
 <li><a href="https://www.ntt-co-jp.club/user">ssrcloud</a></li>
 <li><a href="https://login.teamviewer.com/">TeamViewer</a></li>
@@ -144,8 +144,8 @@ print(loss)
 </ul>
 <h1 id="ideas">Ideas</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9371554"><label class="task-list-item-label" for="task-item-9371554"> Use a neural network to substitute non-maximum reppression (NMS).</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4528373"><label class="task-list-item-label" for="task-item-4528373"> VAE and face recognition</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5379034"><label class="task-list-item-label" for="task-item-5379034"> Use a neural network to substitute non-maximum reppression (NMS).</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8297293"><label class="task-list-item-label" for="task-item-8297293"> VAE and face recognition</label></li>
 </ul>
 <h2 id="machine-learning">Machine Learning</h2>
 <p>precision and recall</p>
