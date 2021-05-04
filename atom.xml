@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jiaheng-dlut.github.io/</id>
     <title>Gridea</title>
-    <updated>2021-05-04T10:27:11.500Z</updated>
+    <updated>2021-05-04T11:05:05.290Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jiaheng-dlut.github.io/"/>
     <link rel="self" href="https://jiaheng-dlut.github.io/atom.xml"/>
@@ -10,6 +10,80 @@
     <logo>https://jiaheng-dlut.github.io/images/avatar.png</logo>
     <icon>https://jiaheng-dlut.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[mAP]]></title>
+        <id>https://jiaheng-dlut.github.io/post/map/</id>
+        <link href="https://jiaheng-dlut.github.io/post/map/">
+        </link>
+        <updated>2021-05-04T11:04:00.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="map">mAP</h1>
+<ul>
+<li>mean average precision</li>
+<li>目标检测常用指标之一</li>
+</ul>
+<h3 id="to-calculate-map-we-need-to-know-what-ap-is">To calculate mAP, we need to know what AP is.</h3>
+<p>mAP 就是不同 IoU threshold 下，AP 的平均值，CoCo 取 [0.50:0.05:0.95]。</p>
+<h3 id="to-know-what-ap-is-we-need-to-know-what-p-r-curve-is">To know what AP is, we need to know what P-R curve is.</h3>
+<p>AP 就是 P-R curve 与 X 轴和 Y 轴围成的面积，为计算面积，一般使用插值的方法，CoCo 取 [0:0.01:1]，共 101 个点，插值得到的 precision 为大于等于当前 recall 的最大 precision。</p>
+<h3 id="to-know-what-p-r-curve-is-we-need-to-know-what-precision-and-recall-are">To know what P-R curve is, we need to know what precision and recall are.</h3>
+<p>规定：</p>
+<ul>
+<li><code>all detetections</code>: 所有检测框的数量</li>
+<li><code>all ground truths</code>: 所有 GT 的数量</li>
+</ul>
+<p>则有：</p>
+<ul>
+<li>查准率 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>precision</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>P</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mtext>all detections</mtext></mfrac></mrow><annotation encoding="application/x-tex">\text{precision} = \frac{TP}{TP + FP}=\frac{TP}{\text{all detections}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8623000000000001em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">precision</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.275662em;vertical-align:-0.403331em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span><span class="mbin mtight">+</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">F</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.403331em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.217331em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">all detections</span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+<li>查全率 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>recall</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mtext>all ground truths</mtext></mfrac></mrow><annotation encoding="application/x-tex">\text{recall} = \frac{TP}{TP + FN}=\frac{TP}{\text{all ground truths}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">recall</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.275662em;vertical-align:-0.403331em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span><span class="mbin mtight">+</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">F</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.403331em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.3534389999999998em;vertical-align:-0.481108em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">all ground truths</span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.481108em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+</ul>
+<ol>
+<li>当 IoU threshold 固定时，比如 IoU threshold = 0.5，所有的预测框都可以被分成 TP 和 FP 两大类：对于某个 GT，将 IoU 最大且 &gt;= threshold 的预测框标记为 TP，其他的标记为 FP，即一个 GT 至多只能有一个预测框标记为 TP。</li>
+<li>每个预测框都有一个置信度（confidence），我们根据置信度进行排序，选择预测框，可以得到不同的 (recall, precision)，然后 recall 作为自变量，precision 作为因变量，画出折线图，即可得到 P-R curve。</li>
+</ol>
+<h3 id="to-know-what-precision-and-recall-are-we-need-to-know-what-tp-fp-fn-and-tn-are">To know what precision and recall are, we need to know what TP, FP, FN and TN are.</h3>
+<p>ground truth (GT)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">目标检测</th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">IoU &gt; threshold</td>
+<td style="text-align:center">TP</td>
+<td style="text-align:center">真阳性</td>
+<td style="text-align:center">同一 GT 只计算一次</td>
+</tr>
+<tr>
+<td style="text-align:center">IoU &lt;= threshold</td>
+<td style="text-align:center">FP<br />误报</td>
+<td style="text-align:center">假阳性</td>
+<td style="text-align:center">IoU &lt;= threshold 的检测框数量 + 同一 GT 多余的检测框数量</td>
+</tr>
+<tr>
+<td style="text-align:center">IoU &gt; threshold</td>
+<td style="text-align:center">FN<br />漏报</td>
+<td style="text-align:center">假阴性</td>
+<td style="text-align:center">没有检测到的 GT 数量</td>
+</tr>
+<tr>
+<td style="text-align:center">IoU &gt; threshold</td>
+<td style="text-align:center">TN</td>
+<td style="text-align:center">真阴性</td>
+<td style="text-align:center">计算 mAP 时不会使用</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<ol>
+<li><a href="https://www.zhihu.com/question/53405779/answer/993913699">目标检测中的mAP是什么含义？ - AICV的回答 - 知乎</a></li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[work-life balance]]></title>
         <id>https://jiaheng-dlut.github.io/post/work-life-balance/</id>
@@ -34,23 +108,23 @@
 </ul>
 <h1 id="target">Target</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7048269"><label class="task-list-item-label" for="task-item-7048269"> Spanish</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2278866"><label class="task-list-item-label" for="task-item-2278866"> weight -> 75 kg</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3275167"><label class="task-list-item-label" for="task-item-3275167"> 11, 6, 6</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-562886"><label class="task-list-item-label" for="task-item-562886"> no pepper</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9066633"><label class="task-list-item-label" for="task-item-9066633"> https://tangshusen.me/Dive-into-DL-PyTorch/#/chapter06_RNN/6.1_lang-model</label>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5985985"><label class="task-list-item-label" for="task-item-5985985"> Spanish</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4937857"><label class="task-list-item-label" for="task-item-4937857"> weight -> 75 kg</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6633286"><label class="task-list-item-label" for="task-item-6633286"> 11, 6, 6</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-663331"><label class="task-list-item-label" for="task-item-663331"> no pepper</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1960915"><label class="task-list-item-label" for="task-item-1960915"> https://tangshusen.me/Dive-into-DL-PyTorch/#/chapter06_RNN/6.1_lang-model</label>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1544314"><label class="task-list-item-label" for="task-item-1544314"> 什么是马尔可夫假设？</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8213091"><label class="task-list-item-label" for="task-item-8213091"> 什么是马尔可夫假设？</label></li>
 </ul>
 </li>
 </ul>
 <h1 id="2021-04-12-2021-04-18">2021-04-12 -&gt; 2021-04-18</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6961138"><label class="task-list-item-label" for="task-item-6961138"> Lose 0.5kg</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8833797"><label class="task-list-item-label" for="task-item-8833797"> VAE (what, why, how), Monday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-47948"><label class="task-list-item-label" for="task-item-47948"> Markov Chain (what, why, how), Tuesday -> Friday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4342387"><label class="task-list-item-label" for="task-item-4342387"> Call mom, Tuesday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2258376"><label class="task-list-item-label" for="task-item-2258376"> Call dad, Thursday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5824248"><label class="task-list-item-label" for="task-item-5824248"> Lose 0.5kg</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7621559"><label class="task-list-item-label" for="task-item-7621559"> VAE (what, why, how), Monday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6417024"><label class="task-list-item-label" for="task-item-6417024"> Markov Chain (what, why, how), Tuesday -> Friday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6963101"><label class="task-list-item-label" for="task-item-6963101"> Call mom, Tuesday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4342419"><label class="task-list-item-label" for="task-item-4342419"> Call dad, Thursday</label></li>
 </ul>
 <table>
 <thead>
@@ -109,11 +183,11 @@
 <h1 id="academic">Academic</h1>
 <h2 id="coding">Coding</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7366797"><label class="task-list-item-label" for="task-item-7366797"> 拿到需求 -> 可行性分析、lower bound、upper bound</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6668704"><label class="task-list-item-label" for="task-item-6668704"> 设计 -> visualization</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2074173"><label class="task-list-item-label" for="task-item-2074173"> how to test -> a reliable result</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9975057"><label class="task-list-item-label" for="task-item-9975057"> code</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4472219"><label class="task-list-item-label" for="task-item-4472219"> test</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9914747"><label class="task-list-item-label" for="task-item-9914747"> 拿到需求 -> 可行性分析、lower bound、upper bound</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9945295"><label class="task-list-item-label" for="task-item-9945295"> 设计 -> visualization</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9923105"><label class="task-list-item-label" for="task-item-9923105"> how to test -> a reliable result</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6740262"><label class="task-list-item-label" for="task-item-6740262"> code</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3458342"><label class="task-list-item-label" for="task-item-3458342"> test</label></li>
 </ul>
 <h2 id="git">git</h2>
 <p>放弃工作区修改，<strong>一定不能忘记--，否则就是切换 branch 了</strong>。</p>
@@ -133,8 +207,8 @@
 </ul>
 <h1 id="ideas">Ideas</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7227933"><label class="task-list-item-label" for="task-item-7227933"> Use a neural network to substitute non-maximum reppression (NMS).</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8593627"><label class="task-list-item-label" for="task-item-8593627"> VAE and face recognition</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4904652"><label class="task-list-item-label" for="task-item-4904652"> Use a neural network to substitute non-maximum reppression (NMS).</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3412305"><label class="task-list-item-label" for="task-item-3412305"> VAE and face recognition</label></li>
 </ul>
 <h2 id="machine-learning">Machine Learning</h2>
 <p>precision and recall</p>

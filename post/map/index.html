@@ -1,0 +1,248 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>mAP | Gridea</title>
+<link rel="shortcut icon" href="https://jiaheng-dlut.github.io//favicon.ico?v=1620126299849">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://jiaheng-dlut.github.io//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="mAP | Gridea - Atom Feed" href="https://jiaheng-dlut.github.io//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="mAP
+
+mean average precision
+目标检测常用指标之一
+
+To calculate mAP, we need to know what AP is.
+mAP 就是不同 IoU threshold 下，AP 的平均值，C..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://jiaheng-dlut.github.io/">
+  <img class="avatar" src="https://jiaheng-dlut.github.io//images/avatar.png?v=1620126299849" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              mAP
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-05-04
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="map">mAP</h1>
+<ul>
+<li>mean average precision</li>
+<li>目标检测常用指标之一</li>
+</ul>
+<h3 id="to-calculate-map-we-need-to-know-what-ap-is">To calculate mAP, we need to know what AP is.</h3>
+<p>mAP 就是不同 IoU threshold 下，AP 的平均值，CoCo 取 [0.50:0.05:0.95]。</p>
+<h3 id="to-know-what-ap-is-we-need-to-know-what-p-r-curve-is">To know what AP is, we need to know what P-R curve is.</h3>
+<p>AP 就是 P-R curve 与 X 轴和 Y 轴围成的面积，为计算面积，一般使用插值的方法，CoCo 取 [0:0.01:1]，共 101 个点，插值得到的 precision 为大于等于当前 recall 的最大 precision。</p>
+<h3 id="to-know-what-p-r-curve-is-we-need-to-know-what-precision-and-recall-are">To know what P-R curve is, we need to know what precision and recall are.</h3>
+<p>规定：</p>
+<ul>
+<li><code>all detetections</code>: 所有检测框的数量</li>
+<li><code>all ground truths</code>: 所有 GT 的数量</li>
+</ul>
+<p>则有：</p>
+<ul>
+<li>查准率 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>precision</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>P</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mtext>all detections</mtext></mfrac></mrow><annotation encoding="application/x-tex">\text{precision} = \frac{TP}{TP + FP}=\frac{TP}{\text{all detections}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8623000000000001em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">precision</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.275662em;vertical-align:-0.403331em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span><span class="mbin mtight">+</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">F</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.403331em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.217331em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">all detections</span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+<li>查全率 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>recall</mtext><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mrow><mi>T</mi><mi>P</mi><mo>+</mo><mi>F</mi><mi>N</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>T</mi><mi>P</mi></mrow><mtext>all ground truths</mtext></mfrac></mrow><annotation encoding="application/x-tex">\text{recall} = \frac{TP}{TP + FN}=\frac{TP}{\text{all ground truths}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">recall</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.275662em;vertical-align:-0.403331em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span><span class="mbin mtight">+</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">F</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.403331em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.3534389999999998em;vertical-align:-0.481108em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.872331em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">all ground truths</span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.481108em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+</ul>
+<ol>
+<li>当 IoU threshold 固定时，比如 IoU threshold = 0.5，所有的预测框都可以被分成 TP 和 FP 两大类：对于某个 GT，将 IoU 最大且 &gt;= threshold 的预测框标记为 TP，其他的标记为 FP，即一个 GT 至多只能有一个预测框标记为 TP。</li>
+<li>每个预测框都有一个置信度（confidence），我们根据置信度进行排序，选择预测框，可以得到不同的 (recall, precision)，然后 recall 作为自变量，precision 作为因变量，画出折线图，即可得到 P-R curve。</li>
+</ol>
+<h3 id="to-know-what-precision-and-recall-are-we-need-to-know-what-tp-fp-fn-and-tn-are">To know what precision and recall are, we need to know what TP, FP, FN and TN are.</h3>
+<p>ground truth (GT)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">目标检测</th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">IoU &gt; threshold</td>
+<td style="text-align:center">TP</td>
+<td style="text-align:center">真阳性</td>
+<td style="text-align:center">同一 GT 只计算一次</td>
+</tr>
+<tr>
+<td style="text-align:center">IoU &lt;= threshold</td>
+<td style="text-align:center">FP<br />误报</td>
+<td style="text-align:center">假阳性</td>
+<td style="text-align:center">IoU &lt;= threshold 的检测框数量 + 同一 GT 多余的检测框数量</td>
+</tr>
+<tr>
+<td style="text-align:center">IoU &gt; threshold</td>
+<td style="text-align:center">FN<br />漏报</td>
+<td style="text-align:center">假阴性</td>
+<td style="text-align:center">没有检测到的 GT 数量</td>
+</tr>
+<tr>
+<td style="text-align:center">IoU &gt; threshold</td>
+<td style="text-align:center">TN</td>
+<td style="text-align:center">真阴性</td>
+<td style="text-align:center">计算 mAP 时不会使用</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<ol>
+<li><a href="https://www.zhihu.com/question/53405779/answer/993913699">目标检测中的mAP是什么含义？ - AICV的回答 - 知乎</a></li>
+</ol>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#map">mAP</a><br>
+*
+<ul>
+<li><a href="#to-calculate-map-we-need-to-know-what-ap-is">To calculate mAP, we need to know what AP is.</a></li>
+<li><a href="#to-know-what-ap-is-we-need-to-know-what-p-r-curve-is">To know what AP is, we need to know what P-R curve is.</a></li>
+<li><a href="#to-know-what-p-r-curve-is-we-need-to-know-what-precision-and-recall-are">To know what P-R curve is, we need to know what precision and recall are.</a></li>
+<li><a href="#to-know-what-precision-and-recall-are-we-need-to-know-what-tp-fp-fn-and-tn-are">To know what precision and recall are, we need to know what TP, FP, FN and TN are.</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://jiaheng-dlut.github.io/post/work-life-balance/">
+              <h3 class="post-title">
+                work-life balance
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://jiaheng-dlut.github.io//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
