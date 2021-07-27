@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jiaheng-dlut.github.io/</id>
     <title>Gridea</title>
-    <updated>2021-05-31T00:38:45.791Z</updated>
+    <updated>2021-07-27T20:42:00.429Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jiaheng-dlut.github.io/"/>
     <link rel="self" href="https://jiaheng-dlut.github.io/atom.xml"/>
@@ -85,7 +85,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[work-life balance]]></title>
+        <title type="html"><![CDATA[Self-Management Rules]]></title>
         <id>https://jiaheng-dlut.github.io/post/work-life-balance/</id>
         <link href="https://jiaheng-dlut.github.io/post/work-life-balance/">
         </link>
@@ -93,6 +93,96 @@
         <content type="html"><![CDATA[<p>除非要饿死了，否则坚决执行！</p>
 <hr>
 <p>每周三晚上 6:00 ~ 8:00 打篮球</p>
+<blockquote>
+<p>Update on 2021-07-28</p>
+</blockquote>
+<h2 id="rule-1-always-backup-data">Rule 1: Always BACKUP data.</h2>
+<p><em><strong>Data is priceless!!!</strong></em></p>
+<ul>
+<li>code
+<ul>
+<li>每天：代码通过测试之后，commit code。</li>
+<li>每周五：current best 代码打成 tar 压缩包，命名为 <code>W20210726_commitment_result</code>，拷贝到？？？。</li>
+<li>月末周五：本月代码打成 tar 压缩包，命名为 <code>M20210701_commitment_result</code>，拷贝到？？？。</li>
+<li>年末周五：本年代码打成 tar 压缩包，命名为 <code>Y20210101_commitment_result</code>，拷贝到？？？。</li>
+</ul>
+</li>
+<li>data
+<ul>
+<li>数据集建立好之后立刻完整备份，并且只能够通过只读模式访问，绝对禁止写入。</li>
+</ul>
+</li>
+</ul>
+<h2 id="rule-2-focus-on-what-matters">Rule 2: FOCUS on what matters.</h2>
+<p>每件事情划分成小块去解决，每个小块 45 分钟左右，如果不能划分成小块，说明对任务了解不够透彻，需要进一步深入了解。</p>
+<h2 id="rule-3-continue-previous-work">Rule 3: CONTINUE previous work.</h2>
+<p>不要放弃之前的工作，而是应该不断完善之前的工作，没有人能够在一开始就把事情做到完美，完美主义不可取。</p>
+<h2 id="rule-4-less-categories">Rule 4: LESS categories.</h2>
+<p>少分类。对于所以分类行为，最好不超过十个。所有资料都可以分成八个类别，几乎能涵盖所有资料，分别是</p>
+<ul>
+<li>个人管理（00_）</li>
+<li>身体健康（01_）</li>
+<li>家庭生活（02_）</li>
+<li>能力提升（03_）</li>
+<li>社交人际（04_）</li>
+<li>财富自由（05_）</li>
+<li>兴趣爱好（06_）</li>
+<li>工作事业（07_）</li>
+</ul>
+<p>然后单独开辟一个工作台（<code>workspace</code>）用来存现在正在做的事情，比如写论文，比如某某活动，最后活动结束的时候直接归档。</p>
+<h2 id="rule-5-storage-isolation-code-and-data">Rule 5: Storage ISOLATION: Code and Data.</h2>
+<p>新建一个项目，按照以下格式存放代码和数据：</p>
+<ul>
+<li><code>code</code>
+<ul>
+<li><code>00_method1</code>
+<ul>
+<li><code>configs</code>
+<ul>
+<li><code>00_config1</code></li>
+<li><code>01_config2</code></li>
+</ul>
+</li>
+<li><code>logs</code>
+<ul>
+<li><code>00_log1</code></li>
+<li><code>01_log2</code></li>
+</ul>
+</li>
+<li><code>output</code>
+<ul>
+<li><code>00_output1</code></li>
+<li><code>01_output2</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>01_method2</code></li>
+</ul>
+</li>
+<li><code>data</code>: 数据集建立好之后立刻完整备份，并且只能够通过只读模式访问，绝对禁止写入。
+<ul>
+<li><code>00_dataset1</code></li>
+<li><code>01_dataset2</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="rule-6-think-twice-before-do">Rule 6: Think TWICE before do.</h2>
+<p>做事情之前先想清楚：</p>
+<ol>
+<li>为什么要做这件事？可以从做这件事的好处和不做这件事的坏处来思考。</li>
+<li>一定要做这件事吗？一定要做，继续下个问题；不一定要做，降低优先级。</li>
+<li>怎样做好这件事？可以思考：有哪些方案？这些方案的优点和缺点是什么？权衡之后，那个是最好的方案？</li>
+<li>怎样保证做的是对的？可以思考：怎样验证自己做的对不对？</li>
+</ol>
+<p>以写代码为例，写代码之前先想清楚：</p>
+<ol>
+<li>为什么要写这段代码：写了有什么好处，不写有什么坏处。</li>
+<li>一定要写吗？为什么一定要写，没有其他的办法吗？</li>
+<li>有几种方案去写，工作量大不大，时间复杂度怎么样，空间复杂度怎么样</li>
+<li>怎样去测试写的代码对不对？</li>
+</ol>
+<hr>
 ]]></content>
     </entry>
     <entry>
@@ -112,23 +202,23 @@ why did I fail?
 </ul>
 <h1 id="target">Target</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8752160"><label class="task-list-item-label" for="task-item-8752160"> Spanish</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-961302"><label class="task-list-item-label" for="task-item-961302"> weight -> 75 kg</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6483006"><label class="task-list-item-label" for="task-item-6483006"> 11, 6, 6</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3590276"><label class="task-list-item-label" for="task-item-3590276"> no pepper</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5478717"><label class="task-list-item-label" for="task-item-5478717"> https://tangshusen.me/Dive-into-DL-PyTorch/#/chapter06_RNN/6.1_lang-model</label>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3785137"><label class="task-list-item-label" for="task-item-3785137"> Spanish</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-98974"><label class="task-list-item-label" for="task-item-98974"> weight -> 75 kg</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9837454"><label class="task-list-item-label" for="task-item-9837454"> 11, 6, 6</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5889593"><label class="task-list-item-label" for="task-item-5889593"> no pepper</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3523496"><label class="task-list-item-label" for="task-item-3523496"> https://tangshusen.me/Dive-into-DL-PyTorch/#/chapter06_RNN/6.1_lang-model</label>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-25291"><label class="task-list-item-label" for="task-item-25291"> 什么是马尔可夫假设？</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6423851"><label class="task-list-item-label" for="task-item-6423851"> 什么是马尔可夫假设？</label></li>
 </ul>
 </li>
 </ul>
 <h1 id="2021-04-12-2021-04-18">2021-04-12 -&gt; 2021-04-18</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7331439"><label class="task-list-item-label" for="task-item-7331439"> Lose 0.5kg</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1701099"><label class="task-list-item-label" for="task-item-1701099"> VAE (what, why, how), Monday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1141138"><label class="task-list-item-label" for="task-item-1141138"> Markov Chain (what, why, how), Tuesday -> Friday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6457800"><label class="task-list-item-label" for="task-item-6457800"> Call mom, Tuesday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3547438"><label class="task-list-item-label" for="task-item-3547438"> Call dad, Thursday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1590391"><label class="task-list-item-label" for="task-item-1590391"> Lose 0.5kg</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7557442"><label class="task-list-item-label" for="task-item-7557442"> VAE (what, why, how), Monday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1324133"><label class="task-list-item-label" for="task-item-1324133"> Markov Chain (what, why, how), Tuesday -> Friday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8589772"><label class="task-list-item-label" for="task-item-8589772"> Call mom, Tuesday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6166215"><label class="task-list-item-label" for="task-item-6166215"> Call dad, Thursday</label></li>
 </ul>
 <table>
 <thead>
@@ -187,11 +277,11 @@ why did I fail?
 <h1 id="academic">Academic</h1>
 <h2 id="coding">Coding</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3554781"><label class="task-list-item-label" for="task-item-3554781"> 拿到需求 -> 可行性分析、lower bound、upper bound</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2040940"><label class="task-list-item-label" for="task-item-2040940"> 设计 -> visualization</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-430500"><label class="task-list-item-label" for="task-item-430500"> how to test -> a reliable result</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4340023"><label class="task-list-item-label" for="task-item-4340023"> code</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3354733"><label class="task-list-item-label" for="task-item-3354733"> test</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3009767"><label class="task-list-item-label" for="task-item-3009767"> 拿到需求 -> 可行性分析、lower bound、upper bound</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9519096"><label class="task-list-item-label" for="task-item-9519096"> 设计 -> visualization</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1765340"><label class="task-list-item-label" for="task-item-1765340"> how to test -> a reliable result</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8944731"><label class="task-list-item-label" for="task-item-8944731"> code</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9183973"><label class="task-list-item-label" for="task-item-9183973"> test</label></li>
 </ul>
 <h2 id="git">git</h2>
 <p>放弃工作区修改，<strong>一定不能忘记--，否则就是切换 branch 了</strong>。</p>
@@ -212,8 +302,8 @@ why did I fail?
 </ul>
 <h1 id="ideas">Ideas</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4005122"><label class="task-list-item-label" for="task-item-4005122"> Use a neural network to substitute non-maximum reppression (NMS).</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4737118"><label class="task-list-item-label" for="task-item-4737118"> VAE and face recognition</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4310832"><label class="task-list-item-label" for="task-item-4310832"> Use a neural network to substitute non-maximum reppression (NMS).</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-331974"><label class="task-list-item-label" for="task-item-331974"> VAE and face recognition</label></li>
 </ul>
 <h2 id="machine-learning">Machine Learning</h2>
 <p>precision and recall</p>
