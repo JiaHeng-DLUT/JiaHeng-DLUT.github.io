@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jiaheng-dlut.github.io/</id>
     <title>Gridea</title>
-    <updated>2021-08-14T11:28:22.972Z</updated>
+    <updated>2021-08-17T03:50:49.386Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jiaheng-dlut.github.io/"/>
     <link rel="self" href="https://jiaheng-dlut.github.io/atom.xml"/>
@@ -14,28 +14,6 @@
         <title type="html"><![CDATA[How to train a deep neural network?]]></title>
         <id>https://jiaheng-dlut.github.io/post/how-to-train-a-deep-neural-network/</id>
         <link href="https://jiaheng-dlut.github.io/post/how-to-train-a-deep-neural-network/">
-        </link>
-        <updated>2021-08-14T11:13:42.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>large batch size</li>
-<li>Adam or SGD</li>
-<li>learning rate</li>
-<li><a href="https://github.com/JDAI-CV/fast-reid/blob/HEAD/fastreid/data/transforms/autoaugment.py">data auto augmentation</a></li>
-<li><a href="https://github.com/JDAI-CV/fast-reid/blob/HEAD/fastreid/modeling/backbones/resnest.py">ResNeSt</a> &gt; ResNet</li>
-<li><a href="https://github.com/JDAI-CV/fast-reid/blob/HEAD/fastreid/layers/any_softmax.py#L57">circle loss</a></li>
-<li><a href="https://github.com/JDAI-CV/fast-reid/blob/HEAD/fastreid/solver/build.py#L260">weight decay</a>:
-<ol>
-<li>WEIGHT_DECAY: 0.0005</li>
-<li>WEIGHT_DECAY_BIAS: 0.</li>
-</ol>
-</li>
-</ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to training a deep neural network?]]></title>
-        <id>https://jiaheng-dlut.github.io/post/how-to-training-a-deep-neural-network/</id>
-        <link href="https://jiaheng-dlut.github.io/post/how-to-training-a-deep-neural-network/">
         </link>
         <updated>2021-08-14T11:13:42.000Z</updated>
         <content type="html"><![CDATA[<ol>
@@ -263,6 +241,18 @@
 </blockquote>
 <h2 id="rule-8-always-set-aside-20-of-the-time">Rule 8: Always Set Aside 20% of the time.</h2>
 <p>计划总是赶不上变化，安排任务时永远留出 20% 的时间以防万一，给自己多留条退路。以 plan tomorrow 为例，永远只安排 9:00 a.m. ~ 5:00 p.m. 这 7 个小时，剩余的时间自由安排。</p>
+<h2 id="rule-9-要事优先及时决策">Rule 9: 要事优先，及时决策</h2>
+<p>对事件优先级进行决策判断确实需要许多复杂的分析，但是更重要的是，在进行「要事优先」的决策时<strong>拿出应有的勇气</strong>。在决定哪些事情应该优先、哪些事情可以延缓的问题上，可以采用与「勇气」密切关联的两条重要原则作为决策思路，它们包括</p>
+<ol>
+<li>重<strong>将来</strong>而不重过去；</li>
+<li>重视<strong>机会</strong>而不只看到困难。</li>
+</ol>
+<h2 id="rule-10-重视贡献">Rule 10: 重视贡献</h2>
+<p>把目光集中在贡献上，重视「目标」和「结果」。<br>
+我们可以尝试在完成待办事项之前，用「检查事项」功能写下对这一任务的期望达成效果、目标和质量，以此为导向指导我们在完成事项时的行为，并在最后逐一核对，为调整今后目标和改进行动提供依据。</p>
+<h2 id="rule-11-厚脸皮">Rule 11: 厚脸皮</h2>
+<p>死猪不怕开水烫<br>
+忘记过去，千万不要对过去的事情耿耿于怀！</p>
 ]]></content>
     </entry>
     <entry>
@@ -282,23 +272,23 @@ why did I fail?
 </ul>
 <h1 id="target">Target</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9799877"><label class="task-list-item-label" for="task-item-9799877"> Spanish</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4530525"><label class="task-list-item-label" for="task-item-4530525"> weight -> 75 kg</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4900801"><label class="task-list-item-label" for="task-item-4900801"> 11, 6, 6</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9238228"><label class="task-list-item-label" for="task-item-9238228"> no pepper</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3976260"><label class="task-list-item-label" for="task-item-3976260"> https://tangshusen.me/Dive-into-DL-PyTorch/#/chapter06_RNN/6.1_lang-model</label>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4482711"><label class="task-list-item-label" for="task-item-4482711"> Spanish</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4606123"><label class="task-list-item-label" for="task-item-4606123"> weight -> 75 kg</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4118588"><label class="task-list-item-label" for="task-item-4118588"> 11, 6, 6</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4359082"><label class="task-list-item-label" for="task-item-4359082"> no pepper</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2156907"><label class="task-list-item-label" for="task-item-2156907"> https://tangshusen.me/Dive-into-DL-PyTorch/#/chapter06_RNN/6.1_lang-model</label>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4900120"><label class="task-list-item-label" for="task-item-4900120"> 什么是马尔可夫假设？</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7893756"><label class="task-list-item-label" for="task-item-7893756"> 什么是马尔可夫假设？</label></li>
 </ul>
 </li>
 </ul>
 <h1 id="2021-04-12-2021-04-18">2021-04-12 -&gt; 2021-04-18</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1178065"><label class="task-list-item-label" for="task-item-1178065"> Lose 0.5kg</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9318422"><label class="task-list-item-label" for="task-item-9318422"> VAE (what, why, how), Monday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6123480"><label class="task-list-item-label" for="task-item-6123480"> Markov Chain (what, why, how), Tuesday -> Friday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3923649"><label class="task-list-item-label" for="task-item-3923649"> Call mom, Tuesday</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9109908"><label class="task-list-item-label" for="task-item-9109908"> Call dad, Thursday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6420722"><label class="task-list-item-label" for="task-item-6420722"> Lose 0.5kg</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-343622"><label class="task-list-item-label" for="task-item-343622"> VAE (what, why, how), Monday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8500347"><label class="task-list-item-label" for="task-item-8500347"> Markov Chain (what, why, how), Tuesday -> Friday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1249724"><label class="task-list-item-label" for="task-item-1249724"> Call mom, Tuesday</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4963091"><label class="task-list-item-label" for="task-item-4963091"> Call dad, Thursday</label></li>
 </ul>
 <table>
 <thead>
@@ -357,11 +347,11 @@ why did I fail?
 <h1 id="academic">Academic</h1>
 <h2 id="coding">Coding</h2>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8812147"><label class="task-list-item-label" for="task-item-8812147"> 拿到需求 -> 可行性分析、lower bound、upper bound</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-916853"><label class="task-list-item-label" for="task-item-916853"> 设计 -> visualization</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8706081"><label class="task-list-item-label" for="task-item-8706081"> how to test -> a reliable result</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1832370"><label class="task-list-item-label" for="task-item-1832370"> code</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9883573"><label class="task-list-item-label" for="task-item-9883573"> test</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7023203"><label class="task-list-item-label" for="task-item-7023203"> 拿到需求 -> 可行性分析、lower bound、upper bound</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-701620"><label class="task-list-item-label" for="task-item-701620"> 设计 -> visualization</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-135550"><label class="task-list-item-label" for="task-item-135550"> how to test -> a reliable result</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3383864"><label class="task-list-item-label" for="task-item-3383864"> code</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5674385"><label class="task-list-item-label" for="task-item-5674385"> test</label></li>
 </ul>
 <h2 id="git">git</h2>
 <p>放弃工作区修改，<strong>一定不能忘记--，否则就是切换 branch 了</strong>。</p>
@@ -382,8 +372,8 @@ why did I fail?
 </ul>
 <h1 id="ideas">Ideas</h1>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-610929"><label class="task-list-item-label" for="task-item-610929"> Use a neural network to substitute non-maximum reppression (NMS).</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9399052"><label class="task-list-item-label" for="task-item-9399052"> VAE and face recognition</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1291396"><label class="task-list-item-label" for="task-item-1291396"> Use a neural network to substitute non-maximum reppression (NMS).</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2767729"><label class="task-list-item-label" for="task-item-2767729"> VAE and face recognition</label></li>
 </ul>
 <h2 id="machine-learning">Machine Learning</h2>
 <p>precision and recall</p>
